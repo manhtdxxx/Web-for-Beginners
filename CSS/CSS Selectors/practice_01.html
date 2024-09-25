@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Bài tập CSS Selectors</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-family: "Courier New", Courier, monospace;
+      }
+      em {
+        color: red;
+      }
+      p {
+        color: pink;
+      }
+      p strong {
+        color: blue;
+      }
+      li > a {
+        color: brown;
+      }
+      #syllabus {
+        color: royalblue;
+        font-size: larger;
+      }
+      .content {
+        color: blueviolet;
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thiết kế Web</h1>
+    <h2>Mục lục</h2>
+    <ul>
+      <li><a>Phần 1: HTML</a></li>
+      <li>
+        <p><a>Phần 2: CSS</a></p>
+      </li>
+      <li>Phần 3: Javascript</li>
+      <li>Phần 4: Bootstrap</li>
+    </ul>
+    <p id="syllabus">Đề cương chi tiết môn học <strong>Thiết Kế Web</strong></p>
+    <p class="content-02">Nội dung 1</p>
+    <p class="content"><em>Nội dung 2</em></p>
+    <p class="content">Nội dung 3</p>
+    <p class="content">Nội dung 4</p>
+  </body>
+</html>
