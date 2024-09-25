@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Form Controls</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form action="#" method="get">
+      <p>
+        Tên đăng nhập:
+        <input type="text" name="username" size="15" maxlength="20" />
+      </p>
+
+      <p>
+        Mật khẩu:
+        <input type="password" name="password" size="15" maxlength="20" />
+      </p>
+
+      <p>
+        Nhập câu hỏi bí mật:
+        <textarea name="question" cols="20" rows="5">
+        Nhập nội dung câu hỏi ở đây </textarea
+        >
+      </p>
+
+      <p>
+        Phái:
+        <input type="radio" name="gender" id="male" value="male" checked />
+        <label for="male">Nam</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Nữ</label>
+      </p>
+
+      <p>Ngày sinh: <input type="date" name="birthday"></p>
+      <p>
+       <fieldset>
+            <legend>Sở thích:</legend>
+            <input type="checkbox" name="hobby" id="music" value="music" />
+            <label for="music">Âm nhạc</label> <br />
+            <input type="checkbox" name="hobby" id="game" value="game" />
+            <label for="game">Chơi game</label>
+       </fieldset>
+      </p>
+
+      <p>
+        Thiết bị bạn thường sử dụng:
+        <select name="device">
+          <option></option>
+          <option value="laptop">Máy tính xách tay</option>
+          <option value="pc">Máy tính bàn</option>
+          <option value="tablet" selected>Máy tính bảng</option>
+        </select>
+      </p>
+
+      <p>
+        Thiết bị bạn thường sử dụng (chọn nhiều): <br />
+        <select name="device2" multiple size="5">
+          <option></option>
+          <option value="laptop">Máy tính xách tay</option>
+          <option value="pc">Máy tính bàn</option>
+          <option value="tablet" selected>Máy tính bảng</option>
+          <option value="phone">Điện thoại</option>
+        </select>
+      </p>
+
+      <p>
+        Hình ảnh đại diện:
+        <input type="file" name="avatar" />
+      </p>
+
+
+      <p>Giá trị ẩn: <input type="hidden" name="hiddenValue" value="123"></p>
+      
+      <p>
+        <input type="submit" value="Gửi" /> |
+        <input type="reset" value="Nhập lại" /> |
+        <input type="button" value="Click me!!!" />
+      </p>
+
+      <p>
+        <input type="image" src="Umut-Pulat-Tulliana-2-Korganizer.128.png" />
+      </p>
+    </form>
+  </body>
+</html>
