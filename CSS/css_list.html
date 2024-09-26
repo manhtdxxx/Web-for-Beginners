@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>CSS for List</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+      }
+      .container {
+        border: 1px double;
+        max-width: 800px;
+        margin: 20px auto 20px auto;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      ul,
+      ol {
+        margin-left: 20px;
+      }
+      .inside-list {
+        list-style-position: inside;
+      }
+      .outside-list {
+        list-style-position: outside;
+      }
+      .mixed-list {
+        list-style-type: none;
+        .mixed-list;
+      }
+      .circle {
+        list-style-type: circle;
+      }
+      .square {
+        list-style-type: square;
+      }
+      .disc {
+        list-style-type: disc;
+      }
+      .decimal {
+        list-style-type: decimal;
+      }
+      .zero-leading-decimal {
+        list-style-type: decimal-leading-zero;
+      }
+      .lower-alpha {
+        list-style-type: lower-alpha;
+      }
+      .upper-alpha {
+        list-style-type: upper-alpha;
+      }
+      .lower-roman {
+        list-style-type: lower-roman;
+      }
+      .upper-roman {
+        list-style-type: upper-roman;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Exercise: List Styles</h2>
+      <hr />
+
+      <h3>Inside Position List:</h3>
+      <ul class="inside-list">
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Bananas</li>
+      </ul>
+
+      <h3>Outside Position List:</h3>
+      <ol class="outside-list">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+      </ol>
+
+      <h3>List Styles:</h3>
+      <ul class="mixed-list">
+        <li class="circle">Circle Marker</li>
+        <li class="square">Square Marker</li>
+        <li class="disc">Disc Marker</li>
+        <li class="decimal">Decimal Marker</li>
+        <li class="zero-leading-decimal">Leading Decimal Marker</li>
+        <li class="lower-alpha">Lower Alpha Marker</li>
+        <li class="upper-alpha">Upper Alpha Marker</li>
+        <li class="lower-roman">Lower Roman Marker</li>
+        <li class="upper-roman">Upper Roman Marker</li>
+      </ul>
+    </div>
+  </body>
+</html>
