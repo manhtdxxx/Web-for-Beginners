@@ -36,7 +36,7 @@ public class LoginController extends HttpServlet {
 
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		
+
 		String url;
 		if (username.equals("tung") && password.equals("123456")) {
 			// create a new session

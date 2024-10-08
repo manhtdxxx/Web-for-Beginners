@@ -53,7 +53,7 @@ public class SaveProduct extends HttpServlet {
 			e_maSanPham += "Mã sản phẩm 123 đã tồn tại, vui lòng nhập lại mã sản phẩm!";
 		}
 		request.setAttribute("e_maSanPham", e_maSanPham);
-		
+
 		request.setAttribute("value_maSanPham", maSanPham);
 		request.setAttribute("value_maSanPham", maSanPham);
 		request.setAttribute("value_tenSanPham", tenSanPham);

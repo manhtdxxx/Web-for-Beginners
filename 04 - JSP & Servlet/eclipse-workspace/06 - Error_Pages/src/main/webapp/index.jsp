@@ -24,6 +24,7 @@
 
 <body>
 	<h1>Đây là trang index</h1>
-	Absolute Path is: <%=getServletContext().getRealPath("/")%>
+	Absolute Path is:
+	<%=getServletContext().getRealPath("/")%>
 </body>
 </html>

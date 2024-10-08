@@ -1,21 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Product</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 	crossorigin="anonymous">
-<script
-	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
 	integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
 	crossorigin="anonymous"></script>
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
 	integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
 	crossorigin="anonymous"></script>
 <style type="text/css">
@@ -82,56 +78,48 @@
 	%>
 
 	<div class="container mt-3">
-		<form class="row g-3 needs-validation" action="save-product"
-			method="get" id="my-form">
+		<form class="row g-3 needs-validation" action="save-product" method="get" id="my-form">
 			<div class="row mt-1">
 				<div class="col-6">
-					<label for="maSanPham" class="form-label">Mã sản phẩm<span
-						class="rq">*</span></label> <input type="text" class="form-control"
-						id="maSanPham" name="maSanPham" value="<%=value_maSanPham%>"
+					<label for="maSanPham" class="form-label">Mã sản phẩm<span class="rq">*</span></label> <input
+						type="text" class="form-control" id="maSanPham" name="maSanPham" value="<%=value_maSanPham%>"
 						required>
 					<div class="rq"><%=e_maSanPham%></div>
 				</div>
 				<div class="col-6">
-					<label for="tenSanPham" class="form-label">Tên sản phẩm<span
-						class="rq">*</span></label> <input type="text" class="form-control"
-						id="tenSanPham" name="tenSanPham" value="<%=value_tenSanPham%>"
-						required>
+					<label for="tenSanPham" class="form-label">Tên sản phẩm<span class="rq">*</span></label> <input
+						type="text" class="form-control" id="tenSanPham" name="tenSanPham"
+						value="<%=value_tenSanPham%>" required>
 				</div>
 			</div>
 			<div class="row mt-1">
 				<div class="col-6">
-					<label for="giaNhap" class="form-label">Giá nhập<span
-						class="rq">*</span></label> <input type="number" step="0.01"
-						class="form-control" id="giaNhap" name="giaNhap"
+					<label for="giaNhap" class="form-label">Giá nhập<span class="rq">*</span></label> <input
+						type="number" step="0.01" class="form-control" id="giaNhap" name="giaNhap"
 						value="<%=value_giaNhap%>" required>
 				</div>
 				<div class="col-6">
-					<label for="giaBan" class="form-label">Giá bán<span
-						class="rq">*</span></label> <input type="text" class="form-control"
-						id="giaBan" name="giaBan" value="<%=value_giaBan%>" required>
+					<label for="giaBan" class="form-label">Giá bán<span class="rq">*</span></label> <input
+						type="text" class="form-control" id="giaBan" name="giaBan" value="<%=value_giaBan%>" required>
 					<div id="error_giaBan"></div>
 				</div>
 			</div>
 			<div class="row mt-1">
 				<div class="col-6">
-					<label for="hanSuDung" class="form-label">Hạn sử dụng</label> <input
-						type="date" class="form-control" id="hanSuDung" name="hanSuDung"
-						value="<%=value_hanSuDung%>">
+					<label for="hanSuDung" class="form-label">Hạn sử dụng</label> <input type="date"
+						class="form-control" id="hanSuDung" name="hanSuDung" value="<%=value_hanSuDung%>">
 				</div>
 				<div class="col-6">
-					<label for="vat" class="form-label">VAT</label> <input type="text"
-						class="form-control" id="vat" name="vat" value="<%=value_vat%>">
+					<label for="vat" class="form-label">VAT</label> <input type="text" class="form-control"
+						id="vat" name="vat" value="<%=value_vat%>">
 				</div>
 			</div>
 			<div class="col-12">
 				<label for="moTa" class="form-label">Mô tả sản phẩm</label>
-				<textarea rows="3" cols="12" class="form-control" id="moTa"
-					name="moTa"><%=value_moTa%></textarea>
+				<textarea rows="3" cols="12" class="form-control" id="moTa" name="moTa"><%=value_moTa%></textarea>
 			</div>
 			<div class="col-12">
-				<button class="btn btn-primary" type="button" onclick="my_submit()">Lưu
-					sản phẩm</button>
+				<button class="btn btn-primary" type="button" onclick="my_submit()">Lưu sản phẩm</button>
 			</div>
 		</form>
 	</div>
