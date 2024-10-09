@@ -1,16 +1,17 @@
 package model;
 
 import java.sql.*;
+import java.util.Objects;
 
 public class TacGia {
 	private String maTacGia;
 	private String hoVaTen;
 	private Date ngaySinh;
 	private String tieuSu;
-	
+
 	public TacGia() {
 	}
-	
+
 	public TacGia(String maTacGia, String hoVaTen, Date ngaySinh, String tieuSu) {
 		this.maTacGia = maTacGia;
 		this.hoVaTen = hoVaTen;
@@ -49,7 +50,22 @@ public class TacGia {
 	public void setTieuSu(String tieuSu) {
 		this.tieuSu = tieuSu;
 	}
-	
-	
-	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(maTacGia);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TacGia other = (TacGia) obj;
+		return Objects.equals(maTacGia, other.maTacGia);
+	}
+
 }

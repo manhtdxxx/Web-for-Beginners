@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.*;
+import java.util.Objects;
 
 public class KhachHang {
 	private String maKhachHang;
@@ -132,5 +133,21 @@ public class KhachHang {
 		this.dangKyNhanBanTin = dangKyNhanBanTin;
 	}
 
-	
+	@Override
+	public int hashCode() {
+		return Objects.hash(maKhachHang);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		KhachHang other = (KhachHang) obj;
+		return Objects.equals(maKhachHang, other.maKhachHang);
+	}
+
 }

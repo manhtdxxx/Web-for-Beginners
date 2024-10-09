@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class ChiTietDonHang {
 	private String maChiTietDonHang;
 	private DonHang donHang;
@@ -98,4 +100,22 @@ public class ChiTietDonHang {
 	public void setTongTien(double tongTien) {
 		this.tongTien = tongTien;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(maChiTietDonHang);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ChiTietDonHang other = (ChiTietDonHang) obj;
+		return Objects.equals(maChiTietDonHang, other.maChiTietDonHang);
+	}
+
 }

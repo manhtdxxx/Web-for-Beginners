@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class SanPham {
 	private String maSanPham;
 	private String tenSanPham;
@@ -119,5 +121,21 @@ public class SanPham {
 		this.moTa = moTa;
 	}
 
-	
+	@Override
+	public int hashCode() {
+		return Objects.hash(maSanPham);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		SanPham other = (SanPham) obj;
+		return Objects.equals(maSanPham, other.maSanPham);
+	}
+
 }
